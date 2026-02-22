@@ -1,46 +1,86 @@
-🚗 Vehicle Detection & Counting System using YOLOv8
-📌 Project Overview
+🚦 AI-Powered Smart Traffic Monitoring & Vehicle Recognition System
+🔥 Project Overview
 
-This project is an AI-based Vehicle Detection and Counting System built using Python, YOLOv8, OpenCV, and Streamlit.
+This project is a real-time AI-based Smart Traffic Monitoring System built using YOLOv8, Object Tracking (SORT), Speed Estimation, and OCR.
 
-The system can:
+The system detects, tracks, analyzes, and recognizes vehicles in real-time using computer vision and deep learning techniques.
 
-✅ Detect vehicles in an uploaded image
+It simulates a real-world intelligent traffic surveillance system used in:
 
-✅ Detect and count vehicles in an uploaded video
+Smart Cities
 
-✅ Detect vehicles in real-time using a webcam
+Highway Monitoring
 
-This project demonstrates practical applications of Computer Vision and Deep Learning in traffic monitoring and smart transportation systems.
+Toll Gates
 
-🎯 Features
-🔹 Feature 1 – Image Vehicle Detection
+Traffic Law Enforcement
 
-Upload an image
+Urban Mobility Analytics
 
-Detect vehicles (car, bus, truck, motorcycle)
+🎯 Key Features
+🚘 1. Vehicle Detection
 
-Display bounding boxes
+YOLOv8-based real-time vehicle detection
 
-Show total vehicle count
+Supports: Car, Truck, Bus, Motorcycle
 
-🔹 Feature 2 – Video Vehicle Detection
+Adjustable confidence threshold
 
-Upload a road traffic video
+🔄 2. Unique Vehicle Tracking
 
-Detect vehicles frame-by-frame
+SORT tracking algorithm
 
-Count vehicles in the video
+Unique ID assignment per vehicle
 
-🔹 Feature 3 – Live Camera Detection
+No duplicate counting
 
-Use webcam
+📏 3. Line Crossing Counter
 
-Real-time vehicle detection
+Counts vehicles only when crossing a virtual line
 
-Live counting display
+Eliminates repeated frame counting
 
-🧠 Technologies Used
+🧭 4. Direction Detection
+
+Detects vehicle movement direction
+
+Tracks vertical crossing logic
+
+🚀 5. Speed Estimation
+
+Real-time speed calculation (km/h approximation)
+
+Pixel-to-meter conversion logic
+
+Overspeed alert system
+
+🏷 6. Vehicle Recognition Layer
+
+Demo brand classification pipeline (MobileNetV2)
+
+License Plate OCR using EasyOCR
+
+Text extraction from vehicle region
+
+📊 7. Traffic Analytics
+
+Traffic density classification (Low / Medium / Heavy)
+
+Live performance metrics
+
+CSV logging of:
+
+Timestamp
+
+Vehicle ID
+
+Speed
+
+Brand ID
+
+Plate number
+
+🛠 Technologies Used
 
 Python
 
@@ -48,94 +88,75 @@ YOLOv8 (Ultralytics)
 
 OpenCV
 
-Streamlit
+SORT Tracking Algorithm
+
+PyTorch
+
+MobileNetV2
+
+EasyOCR
 
 NumPy
 
-Pillow
+Streamlit (UI Layer)
 
-🏗️ Project Structure
-vehicle-detection-system/
-│
-├── app.py
-├── requirements.txt
-├── README.md
-└── yolov8n.pt (auto-downloaded)
-⚙️ Installation Guide
-1️⃣ Clone the Repository
-git clone https://github.com/Butsee155/vehicle-ai-system.git
-cd vehicle-ai-system
-2️⃣ Create Virtual Environment (Recommended)
-python -m venv venv
-venv\Scripts\activate
-3️⃣ Install Dependencies
-pip install -r requirements.txt
-4️⃣ Run the Application
-streamlit run app.py
-📊 Dataset Used
+🧠 System Architecture
 
-The model uses the pre-trained YOLOv8 model trained on the COCO dataset.
+Detection → Tracking → Speed Estimation → Recognition → Analytics → Logging
 
-Vehicle classes detected:
+This multi-model pipeline demonstrates integration of:
 
-Car
+Deep Learning
 
-Bus
+Computer Vision
 
-Truck
+Object Tracking
 
-Motorcycle
+OCR
 
-Optional datasets for further training:
+Real-time Data Processing
 
-https://cocodataset.org/
+📂 Project Capabilities
 
-https://www.kaggle.com/datasets
+✔ Real-time vehicle detection
+✔ Unique ID tracking
+✔ Line crossing logic
+✔ Speed estimation
+✔ Over-speed alert
+✔ License plate reading
+✔ Traffic density analysis
+✔ Log generation for analytics
 
-🚀 Future Improvements
-
-Vehicle brand classification
-
-License plate recognition (OCR)
-
-Speed estimation
-
-Traffic density analysis
-
-Deployment with cloud GPU
-
-Model fine-tuning with custom dataset
-
-🎓 Academic Value
+🎓 Academic & Professional Value
 
 This project demonstrates:
 
-Object Detection
+End-to-end AI system design
 
-Deep Learning Model Integration
+Real-time inference pipeline
 
-Real-Time Computer Vision
+Multi-model integration
 
-AI Deployment with Streamlit
+Applied computer vision engineering
 
-End-to-End AI Application Development
+Smart city technology simulation
+
+🚀 Future Improvements
+
+Custom-trained vehicle brand classifier
+
+YOLO-based license plate detector
+
+Camera calibration for accurate speed measurement
+
+Multi-camera dashboard
+
+Cloud deployment (Docker + GPU server)
+
+REST API version (Flask/FastAPI)
 
 👨‍💻 Author
 
 Nisitha Nethsilu
 BSc (Hons) in Data Science
-GitHub: https://github.com/Butsee155
-
-⭐ Why This Project Matters
-
-This system can be applied in:
-
-Smart Cities
-
-Traffic Monitoring
-
-Toll Systems
-
-Parking Management
-
-Surveillance Systems
+Aspiring AI Engineer | Computer Vision Enthusiast
